@@ -1,14 +1,51 @@
+/* Body */
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
+    padding: 0;
 }
 
+/* Header */
 header {
-    background-color: #000000;
-    color: #ffffff;
-    width: 100%;
+    color: #000000;
+    width: 80%; /* Set the header width to 80% */
+    margin: 0 auto; /* Center the header horizontally */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 
+.logo img {
+    height: 50px; /* Adjust the height as needed */
+}
+
+.mobile_menu_icon {
+    display: none;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+header nav li {
+    margin-right: 40px; /* Adjust the spacing as needed */
+}
+
+header nav a {
+    text-decoration: none;
+    color: #000000; /* Link color */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ff6600; /* Hover color */
+}
+
+/* Footer */
 footer {
     position: relative;
     width: 100%;
@@ -18,4 +55,12 @@ footer {
     font-size: small;
     padding: 3px 0;
     margin: 0;
+}
+
+/* Main */
+main {
+    width: 98%;
+    margin: 0 auto; /* Center the header horizontally */
+    
+    background-color: rgb(201, 255, 190);
 }
