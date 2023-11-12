@@ -1,23 +1,13 @@
-/* Body */
-body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #1a1a1a; /* Dark Background Color */
-    color: #fff; /* Text Color */
-}
-
 /* Header */
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    color: #000000;
     text-align: center;
     font-size: 22px;
     padding: 10px 0;
-    background-color: #ffffff; /* Background color for the header */
+    background-color: #5e5e5e; /* Background color for the header */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional box shadow for a subtle elevation effect */
     z-index: 1000; /* Ensure the header stays on top of other elements */
 }
@@ -51,7 +41,7 @@ nav {
 
 .menu a {
     text-decoration: none;
-    color: #000000; /* Link color */
+    color: #e8e8e8; /* Link color */
     font-weight: bold;
     transition: color 0.3s;
     display: block;
@@ -61,8 +51,17 @@ nav {
     color: #ff5e00; /* Hover color */
 }
 
+/* Body */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Dark Background Color */
+    color: #fff; /* Text Color */
+}
+
 h1 {
-    color: #000000;
+    color: #dedede;
 }
 
 /* Main */
@@ -70,7 +69,6 @@ main {
     width: 100%;
     /* margin: 0 auto; */
     padding-top: 60px;
-    background-color: rgb(201, 255, 190);
 }
 
 /* About Section */
@@ -149,7 +147,10 @@ main {
 }
 
 .work-experience {
+    margin: 0 auto;
+    width: 50%;
     background-color: #282828;
+    color: #e7e7e7;  /*  Also need to change p in-line style for job meta  */
     margin-top: 30px;
 }
 
@@ -180,7 +181,7 @@ main {
 }
 
 .project-card {
-    background-color: #f9f9f9;
+    background-color: #242424;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -189,13 +190,13 @@ main {
 .project-card h4 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #333;
+    color: #e0e0e0;
 }
 
 .project-card p {
     font-size: 16px;
     line-height: 1.6;
-    color: #555;
+    color: #cecece;
 }
 
 .project-card a {
