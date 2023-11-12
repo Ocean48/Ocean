@@ -3,15 +3,23 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #1a1a1a; /* Dark Background Color */
+    color: #fff; /* Text Color */
 }
 
 /* Header */
 header {
-    color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    color: #000000;
     text-align: center;
     font-size: 22px;
-    padding: 0px;
+    padding: 10px 0;
+    background-color: #ffffff; /* Background color for the header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional box shadow for a subtle elevation effect */
+    z-index: 1000; /* Ensure the header stays on top of other elements */
 }
 
 /* Not in use */
@@ -53,6 +61,189 @@ nav {
     color: #ff5e00; /* Hover color */
 }
 
+h1 {
+    color: #000000;
+}
+
+/* Main */
+main {
+    width: 100%;
+    /* margin: 0 auto; */
+    padding-top: 60px;
+    background-color: rgb(201, 255, 190);
+}
+
+/* About Section */
+#about {
+    padding: 40px;
+    text-align: center;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.skill-bar {
+    margin-bottom: 20px;
+    position: relative;
+    text-align: left; /* Align the text to the left within the skill bar */
+}
+
+.skill-name {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555; /* Gray Text Color */
+}
+
+.skill-level {
+    height: 20px;
+    width: 100%; /* Set default color for the entire bar */
+    background-color: #eee; /* Default color for the entire bar */
+    position: relative;
+    overflow: hidden;
+}
+
+.fill {
+    display: block;
+    height: 100%;
+    width: 0;
+    background-color: #4CAF50; /* Color to fill the bar */
+    transition: width 1s ease;
+}
+
+.percentage-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #555;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center; /* Center vertically */
+}
+
+.percentage {
+    margin: 0;
+    display: inline-block;
+    padding-left: 5px; /* Add padding for space between percentage and the bar */
+}
+
+/* Additional styling for better readability */
+.skill-bar p {
+    margin: 0; /* Remove default margin for paragraphs within skill bars */
+}
+
+/* Resume Section */
+#resume {
+    padding: 40px;
+    text-align: center;
+}
+
+#resume p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.work-experience {
+    background-color: #282828;
+    margin-top: 30px;
+}
+
+.job {
+    margin-bottom: 20px;
+}
+
+.job h5 {
+    margin-bottom: 5px;
+}
+
+.job ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Projects Section */
+#projects {
+    padding: 40px;
+    text-align: center;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.project-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #3498db; /* Blue color for the link */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.project-card a:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Contact Section */
+#contact {
+    padding: 40px;
+    text-align: center;
+}
+
+#contact p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+#contact a {
+    color: #3498db; /* Blue color for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens if needed */
+}
+
+@media (max-width: 580px) {
+    /* Adjust styles for phones if needed */
+}
+
 /* Footer */
 footer {
     position: relative;
@@ -63,12 +254,4 @@ footer {
     font-size: 14px;
     padding: 1px 0;
     margin: 0;
-}
-
-/* Main */
-main {
-    width: 100%;
-    /* margin: 0 auto; */
-    
-    background-color: rgb(201, 255, 190);
 }
