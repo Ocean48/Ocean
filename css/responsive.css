@@ -1,10 +1,25 @@
 /* Media query for phones (max-width: 480px) */
+
+@media (max-width: 840px) {
+
+    .work-experience {
+        width: 70%;
+    }
+}
+
+
 @media (max-width: 580px) {
     header {
         font-size: 21px;
     }
+
     .menu li {
         margin-right: 30px;
+    }
+
+    .work-experience {
+        margin: 0 auto;
+        width: 80%;
     }
 }
 
@@ -12,8 +27,14 @@
     header {
         font-size: 18.5px;
     }
+
     .menu li {
         margin-right: 20px;
+    }
+
+    .work-experience {
+        margin: 0 auto;
+        width: 100%;
     }
 }
 
@@ -21,6 +42,7 @@
     header {
         font-size: 18px;
     }
+
     .menu li {
         margin-right: 20px;
     }

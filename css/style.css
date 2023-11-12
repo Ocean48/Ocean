@@ -7,7 +7,7 @@ header {
     text-align: center;
     font-size: 22px;
     padding: 10px 0;
-    background-color: #5e5e5e; /* Background color for the header */
+    background-color: #393939; /* Background color for the header */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional box shadow for a subtle elevation effect */
     z-index: 1000; /* Ensure the header stays on top of other elements */
 }
@@ -36,7 +36,7 @@ nav {
 
 .menu li {
     margin: 0px;
-    margin-right: 20px;
+    margin-right: 40px;
 }
 
 .menu a {
@@ -234,15 +234,6 @@ main {
 
 #contact a:hover {
     text-decoration: underline;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    /* Adjust styles for smaller screens if needed */
-}
-
-@media (max-width: 580px) {
-    /* Adjust styles for phones if needed */
 }
 
 /* Footer */
