@@ -1,20 +1,44 @@
 /* Media query for phones (max-width: 480px) */
+@media (max-width: 1250px) {
+
+    .experience-card {
+        width: 55%;
+    }
+
+    section {
+        width: 75%;
+    }
+}
 
 @media (max-width: 1000px) {
 
-    .work-experience {
+    .experience-card {
         width: 60%;
+    }
+
+    section {
+        width: 80%;
     }
 }
 
 @media (max-width: 800px) {
 
-    .work-experience {
+    .experience-card {
         width: 70%;
     }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 775px) {
+
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 20px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 660px) {
     header {
         font-size: 21px;
     }
@@ -23,13 +47,13 @@
         margin-right: 30px;
     }
 
-    .work-experience {
+    .experience-card {
         margin: 0 auto;
         width: 80%;
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
     header {
         font-size: 18px;
     }
@@ -38,7 +62,7 @@
         margin-right: 20px;
     }
 
-    .work-experience {
+    .experience-card {
         margin: 0 auto;
         width: 100%;
     }

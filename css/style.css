@@ -72,6 +72,11 @@ main {
     padding-top: 60px;
 }
 
+section {
+    width: 70%;
+    margin: 0 auto;
+}
+
 /* About Section */
 #about {
     padding: 40px;
@@ -81,7 +86,16 @@ main {
 #about p {
     font-size: 18px;
     line-height: 1.6;
-    color: #555;
+    color: #8d8d8d;
+}
+
+.social-icon {
+    margin-right: 10px;
+    color: #8d8d8d;
+}
+
+.social-icon:hover {
+    color: #2e8ac7;
 }
 
 .skill-bar {
@@ -94,7 +108,7 @@ main {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    color: #555; /* Gray Text Color */
+    color: #8d8d8d; /* Gray Text Color */
 }
 
 .skill-level {
@@ -117,7 +131,7 @@ main {
     position: absolute;
     top: 0;
     right: 0;
-    color: #555;
+    color: #8d8d8d;
     font-size: 14px;
     font-weight: bold;
     display: flex;
@@ -144,28 +158,41 @@ main {
 #resume p {
     font-size: 18px;
     line-height: 1.6;
-    color: #555;
+    color: #8d8d8d;
 }
 
-.work-experience {
+.pdf {
+    color: #2e8ac7;
+    text-decoration: none;
+}
+
+.experience-card {
     margin: 0 auto;
     width: 45%;
     background-color: #282828;
-    color: #e7e7e7;  /*  Also need to change p in-line style for job meta  */
+    color: #e7e7e7;  /*  Also need to change p in-line style for experience-card-inner meta  */
     margin-top: 30px;
 }
 
-.job {
+.experience-card-inner {
     margin-bottom: 20px;
 }
 
-.job h5 {
-    margin-bottom: 5px;
+.experience-card-inner-ul-div {
+    width: 90%;
+    margin: auto 30px;
 }
 
-.job ul {
-    list-style: none;
+.experience-card-inner-title-div {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.experience-card-inner ul {
+    text-align: left;
+    list-style: square;
     padding: 0;
+    margin: 0;
 }
 
 /* Projects Section */
@@ -204,8 +231,8 @@ main {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #3498db; /* Blue color for the link */
-    color: #fff;
+    background-color: #268fd4; /* Blue color for the link */
+    color: #eeeeee;
     text-decoration: none;
     border-radius: 3px;
     transition: background-color 0.3s;
@@ -213,6 +240,7 @@ main {
 
 .project-card a:hover {
     background-color: #2980b9; /* Darker blue on hover */
+    color: #f7f7f7;
 }
 
 /* Contact Section */
@@ -224,11 +252,11 @@ main {
 #contact p {
     font-size: 18px;
     line-height: 1.6;
-    color: #555;
+    color: #8d8d8d;
 }
 
 #contact a {
-    color: #3498db; /* Blue color for links */
+    color: #2e86c1; /* Blue color for links */
     text-decoration: none;
     font-weight: bold;
 }
