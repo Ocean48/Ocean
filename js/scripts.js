@@ -41,3 +41,25 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", updateSkillBars);
 });
 
+
+document.addEventListener("DOMContentLoaded", function () {
+    var scrollToTopButton = document.querySelector(".scroll-to-top");
+
+    scrollToTopButton.addEventListener("click", function (event) {
+        event.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+
+    var scrollToTopButton = document.querySelector(".scroll-to-top-button");
+
+    scrollToTopButton.addEventListener("click", function (event) {
+        event.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+});

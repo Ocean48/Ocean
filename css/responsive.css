@@ -1,12 +1,18 @@
 /* Media query for phones (max-width: 480px) */
 
-@media (max-width: 840px) {
+@media (max-width: 1000px) {
+
+    .work-experience {
+        width: 60%;
+    }
+}
+
+@media (max-width: 800px) {
 
     .work-experience {
         width: 70%;
     }
 }
-
 
 @media (max-width: 580px) {
     header {
@@ -25,7 +31,7 @@
 
 @media (max-width: 450px) {
     header {
-        font-size: 18.5px;
+        font-size: 18px;
     }
 
     .menu li {

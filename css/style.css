@@ -1,3 +1,13 @@
+/* Body */
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Dark Background Color */
+    color: #fff; /* Text Color */
+}
+
+
 /* Header */
 header {
     position: fixed;
@@ -43,21 +53,12 @@ nav {
     text-decoration: none;
     color: #e8e8e8; /* Link color */
     font-weight: bold;
-    transition: color 0.3s;
+    transition: color 0.5s;
     display: block;
 }
 
 .menu a:hover {
     color: #ff5e00; /* Hover color */
-}
-
-/* Body */
-body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #1a1a1a; /* Dark Background Color */
-    color: #fff; /* Text Color */
 }
 
 h1 {
@@ -148,7 +149,7 @@ main {
 
 .work-experience {
     margin: 0 auto;
-    width: 50%;
+    width: 45%;
     background-color: #282828;
     color: #e7e7e7;  /*  Also need to change p in-line style for job meta  */
     margin-top: 30px;
@@ -241,9 +242,23 @@ footer {
     position: relative;
     width: 100%;
     background-color: #000000;
-    color: #a0a0a0;
+    color: #5d5d5d;
     text-align: center;
     font-size: 14px;
     padding: 1px 0;
     margin: 0;
+}
+
+.scroll-to-top-button {
+    text-decoration: none;
+    color: #a0a0a0; /* Arrow color */
+    font-size: 24px;
+    display: block;
+    margin-bottom: 10px; /* Adjust as needed to position the arrow */
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.scroll-to-top-button:hover {
+    color: #ff5e00; /* Hover color */
 }
