@@ -249,7 +249,7 @@ footer {
     margin: 0;
 }
 
-.scroll-to-top-button {
+.scroll-link {
     text-decoration: none;
     color: #a0a0a0; /* Arrow color */
     font-size: 24px;
@@ -259,6 +259,6 @@ footer {
     transition: color 0.3s;
 }
 
-.scroll-to-top-button:hover {
+.scroll-link:hover {
     color: #ff5e00; /* Hover color */
 }

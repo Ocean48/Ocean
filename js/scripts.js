@@ -43,23 +43,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    var scrollToTopButton = document.querySelector(".scroll-to-top");
+    // Smooth scroll for internal links
+    document.querySelectorAll('.scroll-link').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
 
-    scrollToTopButton.addEventListener("click", function (event) {
-        event.preventDefault();
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    });
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
 
-    var scrollToTopButton = document.querySelector(".scroll-to-top-button");
-
-    scrollToTopButton.addEventListener("click", function (event) {
-        event.preventDefault();
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
         });
     });
 });
