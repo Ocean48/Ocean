@@ -196,6 +196,10 @@ section {
     font-size: 17px;
 }
 
+.experience-card-inner li {
+    margin-bottom: 3px;
+}
+
 /* Projects Section */
 #projects {
     padding: 40px;
