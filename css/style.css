@@ -17,9 +17,15 @@ header {
     text-align: center;
     font-size: 22px;
     padding: 10px 0;
+    /*
+    background-image: url('path/to/your/image.jpg'); /* Change this path to your image file */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1000;  /* Ensure the header stays on top of other elements */
     background-color: #393939; /* Background color for the header */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional box shadow for a subtle elevation effect */
-    z-index: 1000; /* Ensure the header stays on top of other elements */
+    box-shadow: 0 2px 5px rgb(255, 255, 255) /*Optional box shadow for a subtle elevation effect */
+
 }
 
 /* Not in use */
