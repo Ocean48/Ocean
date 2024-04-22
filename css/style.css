@@ -17,14 +17,13 @@ header {
     text-align: center;
     font-size: 22px;
     padding: 10px 0;
-    /*
-    background-image: url('path/to/your/image.jpg'); /* Change this path to your image file */
+    /* background-image: url('/img.jpg'); Change this path to your image file */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     z-index: 1000;  /* Ensure the header stays on top of other elements */
     background-color: #393939; /* Background color for the header */
-    box-shadow: 0 2px 5px rgb(255, 255, 255) /*Optional box shadow for a subtle elevation effect */
+    /* box-shadow: 0 2px 5px rgb(255, 255, 255) Optional box shadow for a subtle elevation effect */
 
 }
 
@@ -56,15 +55,18 @@ nav {
 }
 
 .menu a {
+    /* text-shadow:1px 1px 10px #ffffff, 1px 1px 10px #040404; */
     text-decoration: none;
-    color: #e8e8e8; /* Link color */
+    color: #ffffff;
     font-weight: bold;
     transition: color 0.5s;
     display: block;
 }
 
 .menu a:hover {
-    color: #ff5e00; /* Hover color */
+    color: #000000; /* Hover color */
+    text-shadow:1px 1px 10px #000000, 1px 1px 10px #cfcfcf;
+    font-weight: bold;
 }
 
 h1 {
@@ -75,12 +77,16 @@ h1 {
 main {
     width: 100%;
     /* margin: 0 auto; */
-    padding-top: 60px;
+    /* padding-top: 60px; */
 }
 
 section {
     width: 70%;
     margin: 0 auto;
+}
+
+#display_img {
+    width: 100%;
 }
 
 /* About Section */
